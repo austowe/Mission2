@@ -8,13 +8,13 @@ namespace Mission2
         {
             Roller rlr = new Roller();
             int totalRolls = 0;
-            Console.WriteLine("Welcome to the dice throwing simulator!\n");
-            Console.WriteLine("How many dice rolls would you like to simulate?");
-            totalRolls = Int32.Parse(Console.ReadLine());
             int[] rollCount = new int[11];
             string outCount = "";
             int[] rollPercentage = new int[11];
             int tempPercent = 0;
+
+            Console.WriteLine("Welcome to the dice throwing simulator!\n\nHow many dice rolls would you like to simulate?");
+            totalRolls = Int32.Parse(Console.ReadLine());
 
             for (int i = 0; i < totalRolls; i++)
             {
